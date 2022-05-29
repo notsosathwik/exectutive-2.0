@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>   
+    <meta charset="utf-8">
+    <title>Login Form </title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <style>
+    body {
+      background-image: "/Users/penikalapatipranay/Desktop/Unknown2.jpeg" ;
+      background-repeat: no-repeat;
+      background-attachment: fixed; 
+      background-size: cover;
+    }
+    </style>
+  <body>
+    <div class="center">
+      <h1>Login</h1>
+      <Body background="/Users/penikalapatipranay/Desktop/Unknown2.jpeg">  
+      <form class="login_form" action="index1.html" method="post" name="form" onsubmit="return validated()">
+        <div class="txt_field">
+          <input autocomplete="off" type="text" required name="username">
+          <div id="username_error"></div>
+          <label>Username</label>
+        </div>
+        <div class="txt_field">
+          <input type="password" required name="password">
+        <div id="password_error"></div>
+          <label>Password</label>
+        </div>
+        <div class="pass">Forgot Password?</div>
+        <input type="submit" value="Login">
+        <div class="signup_link">
+          Not a member? <a href="#">Signup</a>
+        </div>
+      </form>
+    </div>
+    <script src="valid.js"></script>
+  </body>
+</html>
